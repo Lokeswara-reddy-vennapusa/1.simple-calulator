@@ -5,8 +5,11 @@ Display Menu:
 You print the menu of available operations directly to the console using print statements:
 
 print("1 Addition")
+
 print("2 Subtraction")
+
 print("3 Multiplication")
+
 print("4 Division")
 
 User Input:
@@ -15,7 +18,9 @@ The program takes user input for their choice of operation (choice) and the two 
 
 
 choice = input("Enter your choice: ")
+
 num1 = float(input("Enter Number 1: "))
+
 num2 = float(input("Enter Number 2: "))
 
 Like before, it converts the input numbers to floating-point values.
@@ -27,18 +32,31 @@ The program uses conditional statements (if, elif, and else) to determine which 
 
 
 if choice == "1":
+
     print(num1, "+", num2, "=", (num1 + num2))
+    
 elif choice == "2":
+
     print(num1, "-", num2, "=", (num1 - num2))
+    
 elif choice == "3":
+
     print(num1, "*", num2, "=", (num1 * num2))
+    
 elif choice == "4":
+
     if num2 == 0.0:
+    
         print("Divide by 0 Error")
+        
     else:
+    
         print(num1, "/", num2, "=", (num1 / num2))
+        
 else:
+
     print("Invalid choice")
+    
     
 If the user attempts to divide by zero, it prints "Divide by 0 Error."
 
